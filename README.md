@@ -1,4 +1,4 @@
-# JachtJet
+# YachtJet
 
 YachtJet is a responsive interactive landing page for showcasing yacht rental services. The project is created according to a ready-made layout and includes a main page structure, a yacht list section, blocks about benefits, a rental form and reviews.
 
