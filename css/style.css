@@ -68,25 +68,17 @@ body {
   display: none;
 }
 
-.header-menu-list {
-}
-
-.header-menu-item {
-}
-
-.header-menu-link {
-}
-
-.header-soc-list {
-}
-
-.header-soc-item {
-}
-
 .header-soc-link {
 }
 
 .header-soc-icon {
+  fill: #1b414b;
+
+  transition: fill 250ms ease-in-out;
+}
+
+.header-soc-icon:hover {
+  fill: #062730;
 }
 
 .header-btn-icon {
@@ -213,6 +205,14 @@ body {
   background-color: #1b414b;
   border: none;
   border-radius: 15px;
+  transition:
+    background-color 250ms ease-in-out,
+    color 250ms ease-in-out;
+}
+
+.hero-btn:hover {
+  background-color: #fbfbfb;
+  color: #1b414b;
 }
 
 /* ==== FLEET ==== */
@@ -381,6 +381,14 @@ body {
   background-color: transparent;
   border: 1px solid rgba(251, 251, 251, 0.35);
   border-radius: 15px;
+  transition:
+    background-color 250ms ease-in-out,
+    color 250ms ease-in-out;
+}
+
+.cards-btn:hover {
+  background-color: #fbfbfb;
+  color: #1b414b;
 }
 
 /* ==== PLUS ==== */
@@ -459,7 +467,14 @@ body {
   background-color: transparent;
   padding: 14px 18px;
   border: 1px solid rgba(251, 251, 251, 0.2);
+
   border-radius: 12px;
+  color: #fbfbfb;
+}
+
+.rent-input:focus {
+  outline: none;
+  border: 1px solid rgba(251, 251, 251, 0.5);
 }
 
 .rent-input::placeholder {
@@ -481,6 +496,14 @@ body {
   padding: 14px 44px;
   border: none;
   background-color: #1b414b;
+  transition:
+    background-color 250ms ease-in-out,
+    color 250ms ease-in-out;
+}
+
+.form-btn:hover {
+  background-color: #fbfbfb;
+  color: #1b414b;
 }
 
 .rent-img {
@@ -607,6 +630,15 @@ body {
   display: block;
   align-items: center;
   justify-content: center;
+}
+
+.footer-soc-icon {
+  fill: #fbfbfb;
+  transition: fill 250ms ease-in-out;
+}
+
+.footer-soc-icon:hover {
+  fill: rgba(251, 251, 251, 0.8);
 }
 
 .footer-sub {
