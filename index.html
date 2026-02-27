@@ -28,7 +28,7 @@
       <header class="header">
         <div class="container">
           <nav class="header-nav">
-            <a class="header-logo" href="./index.html">jachtjet</a>
+            <a class="header-logo" href="./index.html">yachtjet</a>
 
             <div class="header-menu">
               <ul class="header-menu-list">
@@ -162,18 +162,20 @@
                 <h2 class="fleet-title">
                   YachtJet fleet is here to take you on the ultimate adventure
                 </h2>
-                <p class="fleet-desc">
-                  From spacious decks to state-of-the-art technology, our yachts
-                  are designed to provide the perfect blend of luxury and
-                  functionality.
-                </p>
-                <p class="fleet-sub-desc">
-                  Take a look at our selection below and choose the yacht that
-                  matches your needs and preferences.No matter which yacht you
-                  choose, our experienced crew will ensure that your journey is
-                  smooth and enjoyable. Book now and get ready for an
-                  unforgettable adventure on the high seas.
-                </p>
+                <div class="fleet-sub-text">
+                  <p class="fleet-desc">
+                    From spacious decks to state-of-the-art technology, our
+                    yachts are designed to provide the perfect blend of luxury
+                    and functionality.
+                  </p>
+                  <p class="fleet-sub-desc">
+                    Take a look at our selection below and choose the yacht that
+                    matches your needs and preferences.No matter which yacht you
+                    choose, our experienced crew will ensure that your journey
+                    is smooth and enjoyable. Book now and get ready for an
+                    unforgettable adventure on the high seas.
+                  </p>
+                </div>
               </div>
               <picture class="fleet-img">
                 <source
@@ -197,7 +199,11 @@
                   "
                   media="(min-width: 320px)"
                 />
-                <img src="./img/fleet/fleet-mob-1x.png" alt="Fleet jacht" />
+                <img
+                  class="fleet-img"
+                  src="./img/fleet/fleet-mob-1x.png"
+                  alt="Fleet jacht"
+                />
               </picture>
             </div>
           </div>
@@ -435,40 +441,42 @@
         <!-- ==== RENT ==== -->
         <section class="rent">
           <div class="container">
-            <h2 class="rent-title">Rent a yacht now</h2>
+            <div class="rent-container">
+              <h2 class="rent-title">Rent a yacht now</h2>
 
-            <form class="rent-form">
-              <div class="rent-form-area">
-                <input
-                  class="rent-input"
-                  type="text"
-                  name="username"
-                  aria-label="username"
-                  placeholder="Full Name"
-                />
-                <input
-                  class="rent-input"
-                  type="email"
-                  name="email"
-                  aria-label="email"
-                  placeholder="Email"
-                />
-                <input
-                  class="rent-input"
-                  type="tel"
-                  name="phone"
-                  aria-label="phone"
-                  placeholder="Phone number"
-                />
-                <textarea
-                  class="rent-input rent-textarea"
-                  name="comment"
-                  aria-label="comment"
-                  placeholder="Comment"
-                ></textarea>
-              </div>
-              <button class="form-btn" type="submit">Send</button>
-            </form>
+              <form class="rent-form">
+                <div class="rent-form-area">
+                  <input
+                    class="rent-input"
+                    type="text"
+                    name="username"
+                    aria-label="username"
+                    placeholder="Full Name"
+                  />
+                  <input
+                    class="rent-input"
+                    type="email"
+                    name="email"
+                    aria-label="email"
+                    placeholder="Email"
+                  />
+                  <input
+                    class="rent-input"
+                    type="tel"
+                    name="phone"
+                    aria-label="phone"
+                    placeholder="Phone number"
+                  />
+                  <textarea
+                    class="rent-input rent-textarea"
+                    name="comment"
+                    aria-label="comment"
+                    placeholder="Comment"
+                  ></textarea>
+                </div>
+                <button class="form-btn" type="submit">Send</button>
+              </form>
+            </div>
 
             <picture>
               <source
@@ -547,6 +555,82 @@
                   of everything.
                 </p>
               </li>
+
+              <li class="review-item tab-tem">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/reviews/review-2-desk-1x.png 1x,
+                      ./img/reviews/review-2-desk-2x.png 2x
+                    "
+                    media="(min-width: 1279px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/reviews/review-2-tab-1x.png 1x,
+                      ./img/reviews/review-2-tab-2x.png 2x
+                    "
+                    media="(min-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/reviews/review-2-mob-1x.png 1x,
+                      ./img/reviews/review-2-mob-2x.png 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="review-img"
+                    src="./img/reviews/review-2-mob-1x.png"
+                    alt=""
+                  />
+                </picture>
+                <h3 class="review-name">Victoria Romashenko</h3>
+                <p class="review-message">
+                  The Sunseeker Manhattan 66 was the perfect choice for our
+                  romantic getaway. The yacht was beautifully designed, with all
+                  the amenities we needed, and the crew was attentive and
+                  friendly.
+                </p>
+              </li>
+
+              <li class="review-item desk-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/reviews/review-1-desk-1x.png 1x,
+                      ./img/reviews/review-1-desk-2x.png 2x
+                    "
+                    media="(min-width: 1279px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/reviews/review-1-tab-1x.png 1x,
+                      ./img/reviews/review-1-tab-2x.png 2x
+                    "
+                    media="(min-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/reviews/review-1-mob-1x.png 1x,
+                      ./img/reviews/review-1-mob-2x.png 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="review-img"
+                    src="./img/reviews/review-1-mob-1x.png"
+                    alt=""
+                  />
+                </picture>
+                <h3 class="review-name">John Wax</h3>
+                <p class="review-message">
+                  I rented the Lagoon 620 with my family for a week-long
+                  vacation and it was the best decision ever. The yacht was
+                  spacious, comfortable, and luxurious, and the crew took care
+                  of everything.
+                </p>
+              </li>
             </ul>
           </div>
         </section>
@@ -556,7 +640,7 @@
       <footer class="footer">
         <div class="container">
           <div class="footer-top">
-            <a class="header-logo footer-logo" href="./index.html">jachtjet</a>
+            <a class="header-logo footer-logo" href="./index.html">yachtjet</a>
 
             <div class="footer-menu">
               <ul class="footer-menu-list">
@@ -576,8 +660,8 @@
                   <a class="footer-soc-link soc-link" href="">
                     <svg
                       class="footer-soc-icon soc-icon"
-                      width="19"
-                      height="19"
+                      width="24"
+                      height="24"
                     >
                       <use
                         href="./img/header/header-icons.svg#icon-instagram"
@@ -589,8 +673,8 @@
                   <a class="footer-soc-link soc-link" href="">
                     <svg
                       class="footer-soc-icon soc-icon"
-                      width="19"
-                      height="19"
+                      width="24"
+                      height="24"
                     >
                       <use
                         href="./img/header/header-icons.svg#icon-youtube"
@@ -602,8 +686,8 @@
                   <a class="footer-soc-link soc-link" href="">
                     <svg
                       class="footer-soc-icon soc-icon"
-                      width="19"
-                      height="19"
+                      width="24"
+                      height="24"
                     >
                       <use
                         href="./img/header/header-icons.svg#icon-facebook"

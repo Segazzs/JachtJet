@@ -23,6 +23,8 @@ body {
 }
 
 .soc-item {
+  width: 24px;
+  height: 24px;
 }
 
 .soc-link {
@@ -156,7 +158,8 @@ body {
   transition: background-color 250ms ease-in-out;
 }
 
-.modal-list-link:hover {
+.modal-list-link:hover,
+.modal-list-link:focus {
   background-color: #1b414b;
 }
 
@@ -259,6 +262,9 @@ body {
 }
 
 .fleet-img {
+  border-radius: 0 24px 0 0;
+  border-bottom-right-radius: 24px;
+  width: 100%;
 }
 
 /* ==== CARDS ==== */
@@ -520,6 +526,10 @@ body {
   align-items: center;
 }
 
+.tab-item {
+  display: none;
+}
+
 .review-img {
   width: 56px;
   height: 56px;
@@ -582,9 +592,6 @@ body {
 }
 
 .footer-menu-item {
-  padding: 15px 12px;
-  background: rgba(251, 251, 251, 0.3);
-  border-radius: 8px;
 }
 
 .footer-menu-link {
@@ -594,7 +601,10 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #fbfbfb;
-  display: flex;
+  padding: 15px 12px;
+  background: rgba(251, 251, 251, 0.3);
+  border-radius: 8px;
+  display: block;
   align-items: center;
   justify-content: center;
 }
