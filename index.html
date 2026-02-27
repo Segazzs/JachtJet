@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/main.js" defer></script>
+    <title>JachtJet</title>
+  </head>
+  <body>
+    <!-- ==== HEADER ==== -->
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <nav class="header-nav">
+            <a class="header-logo" href="./index.html">jachtjet</a>
+
+            <div class="header-menu">
+              <ul class="header-menu-list">
+                <li class="header-menu-item">
+                  <a class="header-menu-link" href="#">About</a>
+                </li>
+                <li class="header-menu-item">
+                  <a class="header-menu-link" href="#">Yachts</a>
+                </li>
+                <li class="header-menu-item">
+                  <a class="header-menu-link" href="#">Reviews</a>
+                </li>
+              </ul>
+
+              <ul class="header-soc-list">
+                <li class="header-soc-item">
+                  <a class="header-soc-link" href="">
+                    <svg class="header-soc-icon" width="19" height="19">
+                      <use
+                        href="./img/header/header-icons.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header-soc-item">
+                  <a class="header-soc-link" href="">
+                    <svg class="header-soc-icon" width="19" height="19">
+                      <use
+                        href="./img/header/header-icons.svg#icon-youtube"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="header-soc-item">
+                  <a class="header-soc-link" href="">
+                    <svg class="header-soc-icon" width="19" height="19">
+                      <use
+                        href="./img/header/header-icons.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="header-btn">
+              <button class="header-open-btn header-btn-icon" id="open">
+                <svg class="open-menu-icon" width="28" height="28">
+                  <use href="./img/header/header-icons.svg#icon-open"></use>
+                </svg>
+              </button>
+
+              <button class="header-close-btn header-btn-icon close" id="close">
+                <svg class="open-menu-icon" width="28" height="28">
+                  <use href="./img/header/header-icons.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </nav>
+        </div>
+
+        <div class="modal-wrapper" id="modal">
+          <div class="modal">
+            <ul class="modal-list">
+              <li class="modal-list-item">
+                <a class="modal-list-link" href="#">About</a>
+              </li>
+              <li class="modal-list-item">
+                <a class="modal-list-link" href="#">Yachts</a>
+              </li>
+              <li class="modal-list-item">
+                <a class="modal-list-link" href="#">Reviews</a>
+              </li>
+            </ul>
+
+            <ul class="modal-soc-list soc-list">
+              <li class="modal-soc-item soc-item">
+                <a class="modal-soc-link soc-link" href="">
+                  <svg class="modal-soc-icon soc-icon" width="19" height="19">
+                    <use
+                      href="./img/header/header-icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="modal-soc-item soc-item">
+                <a class="modal-soc-link soc-link" href="">
+                  <svg class="modal-soc-icon soc-icon" width="19" height="19">
+                    <use
+                      href="./img/header/header-icons.svg#icon-youtube"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="modal-soc-item soc-item">
+                <a class="modal-soc-link soc-link" href="">
+                  <svg class="modal-soc-icon soc-icon" width="19" height="19">
+                    <use
+                      href="./img/header/header-icons.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <main class="">
+        <!-- ==== HERO ==== -->
+        <section class="hero">
+          <div class="container">
+            <h1 class="hero-title">
+              Explore the High Seas with Our Luxury Yacht Rentals
+            </h1>
+            <p class="hero-desc">
+              Experience the freedom and luxury of yachting on the open seas.
+              Choose from our top-of-the-line yachts and embark on an
+              unforgettable journey surrounded by breathtaking views and
+              state-of-the-art amenities.
+            </p>
+            <button class="hero-btn">Yacht rental</button>
+          </div>
+        </section>
+
+        <!-- ==== FLEET ==== -->
+        <section class="fleet">
+          <div class="container">
+            <div class="fleet-wrapper">
+              <div class="fleet-content">
+                <h2 class="fleet-title">
+                  YachtJet fleet is here to take you on the ultimate adventure
+                </h2>
+                <p class="fleet-desc">
+                  From spacious decks to state-of-the-art technology, our yachts
+                  are designed to provide the perfect blend of luxury and
+                  functionality.
+                </p>
+                <p class="fleet-sub-desc">
+                  Take a look at our selection below and choose the yacht that
+                  matches your needs and preferences.No matter which yacht you
+                  choose, our experienced crew will ensure that your journey is
+                  smooth and enjoyable. Book now and get ready for an
+                  unforgettable adventure on the high seas.
+                </p>
+              </div>
+              <picture class="fleet-img">
+                <source
+                  srcset="
+                    ./img/fleet/fleet-desk-1x.png 1x,
+                    ./img/fleet/fleet-desk-2x.png 2x
+                  "
+                  media="(min-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    ./img/fleet/fleet-tab-1x.png 1x,
+                    ./img/fleet/fleet-tab-2x.png 2x
+                  "
+                  media="(min-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/fleet/fleet-mob-1x.png 1x,
+                    ./img/fleet/fleet-mob-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./img/fleet/fleet-mob-1x.png" alt="Fleet jacht" />
+              </picture>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==== CARDS ==== -->
+        <section class="cards">
+          <div class="container">
+            <h2 class="cards-title">
+              Choose your dream yacht and sail away into the sunset
+            </h2>
+            <ul class="cards-list" id="card-list">
+              <li class="cards-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/cards/card-1-desk-1x.png 1x,
+                      ./img/cards/card-1-desk-1x.png 2x
+                    "
+                    media="(min-width: 1279px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/cards/card-1-tab-1x.png 1x,
+                      ./img/cards/card-1-tab-1x.png 2x
+                    "
+                    media="(min-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/cards/card-1-mob-1x.png 1x,
+                      ./img/cards/card-1-mob-1x.png 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="cards-img"
+                    src="./img/cards/card-1-mob-1x.png"
+                    alt=""
+                  />
+                </picture>
+                <div class="card-top">
+                  <p class="yacht-card-name">Arrow</p>
+                  <p class="yach-card-category">LUXURY YAHTS</p>
+                </div>
+                <div class="card-bottom">
+                  <ul class="yacht-card-labels">
+                    <li class="yacht-card-label">Length</li>
+                    <li class="yacht-card-label">Builder</li>
+                    <li class="yacht-card-label">Built</li>
+                    <li class="yacht-card-label">Guests</li>
+                    <li class="yacht-card-label">Price</li>
+                  </ul>
+
+                  <ul class="yacht-card-values">
+                    <li class="yacht-card-value">48m (155ft)</li>
+                    <li class="yacht-card-value">Admiral</li>
+                    <li class="yacht-card-value">2021</li>
+                    <li class="yacht-card-value">11 in 5 cabins</li>
+                    <li class="yacht-card-value">€33,500,000</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="cards-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/cards/card-1-desk-1x.png 1x,
+                      ./img/cards/card-1-desk-1x.png 2x
+                    "
+                    media="(min-width: 1279px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/cards/card-1-tab-1x.png 1x,
+                      ./img/cards/card-1-tab-1x.png 2x
+                    "
+                    media="(min-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/cards/card-1-mob-1x.png 1x,
+                      ./img/cards/card-1-mob-1x.png 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="cards-img"
+                    src="./img/cards/card-1-mob-1x.png"
+                    alt=""
+                  />
+                </picture>
+                <div class="card-top">
+                  <p class="yacht-card-name">Arrow</p>
+                  <p class="yach-card-category">LUXURY YAHTS</p>
+                </div>
+                <div class="card-bottom">
+                  <ul class="yacht-card-labels">
+                    <li class="yacht-card-label">Length</li>
+                    <li class="yacht-card-label">Builder</li>
+                    <li class="yacht-card-label">Built</li>
+                    <li class="yacht-card-label">Guests</li>
+                    <li class="yacht-card-label">Price</li>
+                  </ul>
+
+                  <ul class="yacht-card-values">
+                    <li class="yacht-card-value">48m (155ft)</li>
+                    <li class="yacht-card-value">Admiral</li>
+                    <li class="yacht-card-value">2021</li>
+                    <li class="yacht-card-value">11 in 5 cabins</li>
+                    <li class="yacht-card-value">€33,500,000</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="cards-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/cards/card-1-desk-1x.png 1x,
+                      ./img/cards/card-1-desk-1x.png 2x
+                    "
+                    media="(min-width: 1279px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/cards/card-1-tab-1x.png 1x,
+                      ./img/cards/card-1-tab-1x.png 2x
+                    "
+                    media="(min-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/cards/card-1-mob-1x.png 1x,
+                      ./img/cards/card-1-mob-1x.png 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="cards-img"
+                    src="./img/cards/card-1-mob-1x.png"
+                    alt=""
+                  />
+                </picture>
+                <div class="card-top">
+                  <p class="yacht-card-name">Arrow</p>
+                  <p class="yach-card-category">LUXURY YAHTS</p>
+                </div>
+                <div class="card-bottom">
+                  <ul class="yacht-card-labels">
+                    <li class="yacht-card-label">Length</li>
+                    <li class="yacht-card-label">Builder</li>
+                    <li class="yacht-card-label">Built</li>
+                    <li class="yacht-card-label">Guests</li>
+                    <li class="yacht-card-label">Price</li>
+                  </ul>
+
+                  <ul class="yacht-card-values">
+                    <li class="yacht-card-value">48m (155ft)</li>
+                    <li class="yacht-card-value">Admiral</li>
+                    <li class="yacht-card-value">2021</li>
+                    <li class="yacht-card-value">11 in 5 cabins</li>
+                    <li class="yacht-card-value">€33,500,000</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+            <button class="cards-btn" id="open-card">Yacht rental</button>
+          </div>
+        </section>
+
+        <!-- ==== PLUS ==== -->
+        <section class="plus">
+          <div class="container">
+            <h2 hidden>Plus</h2>
+
+            <ul class="plus-list">
+              <li class="plus-item">
+                <p class="plus-item-num">01</p>
+                <p class="plus-item-desc">
+                  Swimming and water sports: try your hand at water skiing
+                </p>
+              </li>
+              <li class="plus-item">
+                <p class="plus-item-num">02</p>
+                <p class="plus-item-desc">
+                  Fishing: try to catch your own dinner
+                </p>
+              </li>
+              <li class="plus-item">
+                <p class="plus-item-num">03</p>
+                <p class="plus-item-desc">
+                  Sightseeing tours: take a shore or island tour, enjoy the
+                  views and sunsets from the water
+                </p>
+              </li>
+              <li class="plus-item">
+                <p class="plus-item-num">04</p>
+                <p class="plus-item-desc">
+                  Rest and relaxation: read a book or listen to music while
+                  enjoying the outdoor atmosphere.
+                </p>
+              </li>
+            </ul>
+
+            <picture>
+              <source
+                srcset="
+                  ./img/plus/plus-desk-1x.png 1x,
+                  ./img/plus/plus-desk-2x.png 2x
+                "
+                media="(min-width: 1279px)"
+              />
+              <source
+                srcset="
+                  ./img/plus/plus-tab-1x.png 1x,
+                  ./img/plus/plus-tab-2x.png 2x
+                "
+                media="(min-width: 767px)"
+              />
+              <source
+                srcset="
+                  ./img/plus/plus-mob-1x.png 1x,
+                  ./img/plus/plus-mob-2x.png 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img class="plus-img" src="./img/plus/plus-mob-1x.png" alt="" />
+            </picture>
+          </div>
+        </section>
+
+        <!-- ==== RENT ==== -->
+        <section class="rent">
+          <div class="container">
+            <h2 class="rent-title">Rent a yacht now</h2>
+
+            <form class="rent-form">
+              <div class="rent-form-area">
+                <input
+                  class="rent-input"
+                  type="text"
+                  name="username"
+                  aria-label="username"
+                  placeholder="Full Name"
+                />
+                <input
+                  class="rent-input"
+                  type="email"
+                  name="email"
+                  aria-label="email"
+                  placeholder="Email"
+                />
+                <input
+                  class="rent-input"
+                  type="tel"
+                  name="phone"
+                  aria-label="phone"
+                  placeholder="Phone number"
+                />
+                <textarea
+                  class="rent-input rent-textarea"
+                  name="comment"
+                  aria-label="comment"
+                  placeholder="Comment"
+                ></textarea>
+              </div>
+              <button class="form-btn" type="submit">Send</button>
+            </form>
+
+            <picture>
+              <source
+                srcset="
+                  ./img/rent/rent-desk-1x.png 1x,
+                  ./img/rent/rent-desk-2x.png 2x
+                "
+                media="(min-width: 1279px)"
+              />
+              <source
+                srcset="
+                  ./img/rent/rent-tab-1x.png 1x,
+                  ./img/rent/rent-tab-2x.png 2x
+                "
+                media="(min-width: 767px)"
+              />
+              <source
+                srcset="
+                  ./img/rent/rent-mob-1x.png 1x,
+                  ./img/rent/rent-mob-2x.png 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img class="rent-img" src="./img/rent/rent-mob-1x.png" alt="" />
+            </picture>
+          </div>
+        </section>
+
+        <!-- ==== REVIEW ==== -->
+        <section class="review">
+          <div class="container">
+            <h2 class="review-title">
+              YachtJet take pride in providing the best possible service and
+              experience to our customers
+            </h2>
+            <p class="review-desc">
+              Our customers have enjoyed unforgettable moments on our yachts.
+              Don't just take our word for it - read on to find out what they
+              have to say about their journey with us.
+            </p>
+            <ul class="review-list">
+              <li class="review-item">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/reviews/review-1-desk-1x.png 1x,
+                      ./img/reviews/review-1-desk-2x.png 2x
+                    "
+                    media="(min-width: 1279px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/reviews/review-1-tab-1x.png 1x,
+                      ./img/reviews/review-1-tab-2x.png 2x
+                    "
+                    media="(min-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/reviews/review-1-mob-1x.png 1x,
+                      ./img/reviews/review-1-mob-2x.png 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="review-img"
+                    src="./img/reviews/review-1-mob-1x.png"
+                    alt=""
+                  />
+                </picture>
+                <h3 class="review-name">John Wax</h3>
+                <p class="review-message">
+                  I rented the Lagoon 620 with my family for a week-long
+                  vacation and it was the best decision ever. The yacht was
+                  spacious, comfortable, and luxurious, and the crew took care
+                  of everything.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <!-- ==== FOOTER ==== -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-top">
+            <a class="header-logo footer-logo" href="./index.html">jachtjet</a>
+
+            <div class="footer-menu">
+              <ul class="footer-menu-list">
+                <li class="footer-menu-item">
+                  <a class="footer-menu-link" href="#">About</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a class="footer-menu-link" href="#">Yachts</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a class="footer-menu-link" href="#">Reviews</a>
+                </li>
+              </ul>
+
+              <ul class="footer-soc-list soc-list">
+                <li class="footer-soc-item soc-item">
+                  <a class="footer-soc-link soc-link" href="">
+                    <svg
+                      class="footer-soc-icon soc-icon"
+                      width="19"
+                      height="19"
+                    >
+                      <use
+                        href="./img/header/header-icons.svg#icon-instagram"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-soc-item soc-item">
+                  <a class="footer-soc-link soc-link" href="">
+                    <svg
+                      class="footer-soc-icon soc-icon"
+                      width="19"
+                      height="19"
+                    >
+                      <use
+                        href="./img/header/header-icons.svg#icon-youtube"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-soc-item soc-item">
+                  <a class="footer-soc-link soc-link" href="">
+                    <svg
+                      class="footer-soc-icon soc-icon"
+                      width="19"
+                      height="19"
+                    >
+                      <use
+                        href="./img/header/header-icons.svg#icon-facebook"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="footer-sub">
+            No matter which yacht you choose, our experienced crew will ensure
+            that your journey is smooth and enjoyable.
+          </p>
+
+          <div class="footer-bottom">
+            <p>2023. Yacht Adventures</p>
+            <a href="">Privacy Police</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
